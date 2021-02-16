@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E20A0E5725DC47E800124950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0E5625DC47E800124950 /* AppDelegate.swift */; };
 		E20A0E5925DC47E800124950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0E5825DC47E800124950 /* SceneDelegate.swift */; };
-		E20A0E5B25DC47E800124950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0E5A25DC47E800124950 /* ViewController.swift */; };
 		E20A0E5E25DC47E800124950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20A0E5C25DC47E800124950 /* Main.storyboard */; };
 		E20A0E6025DC47EA00124950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20A0E5F25DC47EA00124950 /* Assets.xcassets */; };
 		E20A0E6325DC47EA00124950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20A0E6125DC47EA00124950 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		E20A0EE125DC54EF00124950 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */; };
 		E20A0EEA25DC564D00124950 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EE925DC564D00124950 /* Event.swift */; };
 		E20A0EEF25DC584D00124950 /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EEE25DC584D00124950 /* UIImage+URL.swift */; };
+		E20A0EF425DC5F2700124950 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EF325DC5F2700124950 /* EventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		E20A0E5325DC47E800124950 /* EventsSeatGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsSeatGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20A0E5625DC47E800124950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20A0E5825DC47E800124950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E20A0E5A25DC47E800124950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E20A0E5D25DC47E800124950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E20A0E5F25DC47EA00124950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20A0E6225DC47EA00124950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		E20A0EE925DC564D00124950 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E20A0EEE25DC584D00124950 /* UIImage+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
+		E20A0EF325DC5F2700124950 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +154,8 @@
 			children = (
 				E20A0E5C25DC47E800124950 /* Main.storyboard */,
 				E20A0E6125DC47EA00124950 /* LaunchScreen.storyboard */,
-				E20A0E5A25DC47E800124950 /* ViewController.swift */,
 				E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */,
+				E20A0EF325DC5F2700124950 /* EventsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E20A0EE125DC54EF00124950 /* EventTableViewCell.swift in Sources */,
-				E20A0E5B25DC47E800124950 /* ViewController.swift in Sources */,
 				E20A0E5725DC47E800124950 /* AppDelegate.swift in Sources */,
 				E20A0EEF25DC584D00124950 /* UIImage+URL.swift in Sources */,
+				E20A0EF425DC5F2700124950 /* EventsViewController.swift in Sources */,
 				E20A0E5925DC47E800124950 /* SceneDelegate.swift in Sources */,
 				E20A0EEA25DC564D00124950 /* Event.swift in Sources */,
 			);
