@@ -15,6 +15,9 @@
 		E20A0E6325DC47EA00124950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20A0E6125DC47EA00124950 /* LaunchScreen.storyboard */; };
 		E20A0E6E25DC47EA00124950 /* EventsSeatGeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0E6D25DC47EA00124950 /* EventsSeatGeekTests.swift */; };
 		E20A0E7925DC47EA00124950 /* EventsSeatGeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0E7825DC47EA00124950 /* EventsSeatGeekUITests.swift */; };
+		E20A0EE125DC54EF00124950 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */; };
+		E20A0EEA25DC564D00124950 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EE925DC564D00124950 /* Event.swift */; };
+		E20A0EEF25DC584D00124950 /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EEE25DC584D00124950 /* UIImage+URL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E20A0E7425DC47EA00124950 /* EventsSeatGeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsSeatGeekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20A0E7825DC47EA00124950 /* EventsSeatGeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsSeatGeekUITests.swift; sourceTree = "<group>"; };
 		E20A0E7A25DC47EA00124950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		E20A0EE925DC564D00124950 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E20A0EEE25DC584D00124950 /* UIImage+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +109,6 @@
 				E20A0E9125DC493C00124950 /* Views */,
 				E20A0E9025DC492400124950 /* Controllers */,
 				E20A0E8925DC47FE00124950 /* Application */,
-				E20A0E5A25DC47E800124950 /* ViewController.swift */,
-				E20A0E5C25DC47E800124950 /* Main.storyboard */,
-				E20A0E6125DC47EA00124950 /* LaunchScreen.storyboard */,
 			);
 			path = EventsSeatGeek;
 			sourceTree = "<group>";
@@ -149,6 +152,10 @@
 		E20A0E9125DC493C00124950 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E20A0E5C25DC47E800124950 /* Main.storyboard */,
+				E20A0E6125DC47EA00124950 /* LaunchScreen.storyboard */,
+				E20A0E5A25DC47E800124950 /* ViewController.swift */,
+				E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +163,8 @@
 		E20A0E9225DC494300124950 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E20A0EE925DC564D00124950 /* Event.swift */,
+				E20A0EEE25DC584D00124950 /* UIImage+URL.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20A0EE125DC54EF00124950 /* EventTableViewCell.swift in Sources */,
 				E20A0E5B25DC47E800124950 /* ViewController.swift in Sources */,
 				E20A0E5725DC47E800124950 /* AppDelegate.swift in Sources */,
+				E20A0EEF25DC584D00124950 /* UIImage+URL.swift in Sources */,
 				E20A0E5925DC47E800124950 /* SceneDelegate.swift in Sources */,
+				E20A0EEA25DC564D00124950 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
 				INFOPLIST_FILE = EventsSeatGeek/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
 				INFOPLIST_FILE = EventsSeatGeek/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
