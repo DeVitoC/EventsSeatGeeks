@@ -99,6 +99,9 @@
 		E20A0E5525DC47E800124950 /* EventsSeatGeek */ = {
 			isa = PBXGroup;
 			children = (
+				E20A0E9225DC494300124950 /* Models */,
+				E20A0E9125DC493C00124950 /* Views */,
+				E20A0E9025DC492400124950 /* Controllers */,
 				E20A0E8925DC47FE00124950 /* Application */,
 				E20A0E5A25DC47E800124950 /* ViewController.swift */,
 				E20A0E5C25DC47E800124950 /* Main.storyboard */,
@@ -134,6 +137,27 @@
 				E20A0E6425DC47EA00124950 /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		E20A0E9025DC492400124950 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E20A0E9125DC493C00124950 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E20A0E9225DC494300124950 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
