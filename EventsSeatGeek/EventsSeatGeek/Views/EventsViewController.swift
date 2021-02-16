@@ -9,6 +9,9 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
+    // MARK: - Properties
+    var eventController = EventController()
+
     // MARK: - Outlets
     @IBOutlet weak var eventsTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -16,6 +19,9 @@ class EventsViewController: UIViewController {
     // MARK: - View Meethods
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        eventsTableView.delegate = self
+        eventsTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -30,5 +36,24 @@ class EventsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension EventsViewController: UITableViewDelegate {
+
+}
+
+extension EventsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        eventController.events?.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventTableViewCell else { return UITableViewCell() }
+        cell.event = eventController.events?[indexPath.row]
+
+        return cell
+    }
+
 
 }

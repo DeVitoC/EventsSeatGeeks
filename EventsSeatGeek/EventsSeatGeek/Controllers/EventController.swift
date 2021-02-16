@@ -8,5 +8,6 @@
 import Foundation
 
 class EventController {
-    
+    // MARK: - Properties
+    var events: [Event]?
 }
