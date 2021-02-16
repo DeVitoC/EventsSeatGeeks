@@ -9,6 +9,11 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var eventsTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+
+    // MARK: - View Meethods
     override func viewDidLoad() {
         super.viewDidLoad()
 
