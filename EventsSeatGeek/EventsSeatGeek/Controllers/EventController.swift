@@ -10,12 +10,11 @@ import Foundation
 class EventController {
     // MARK: - Properties
     var events: [Event]?
-    let baseUrl: URL = URL(string: "https://api.seatgeek.com/2")!
     typealias CompletionHandler = (Error?) -> Void
 
     // MARK: - REST methods
     func fetchEventsFromServer(completion: @escaping CompletionHandler = { _ in }) {
-        let requestURL = baseUrl.appendingPathExtension("events")
+        let requestURL = URL(string: Constants.API_URL)!
         URLSession.shared.dataTask(with: requestURL) { (data, _, error) in
             if let error = error {
                 NSLog("Error fetching events: \(error)")
