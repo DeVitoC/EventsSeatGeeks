@@ -8,7 +8,7 @@
 import UIKit
 
 struct Event: Decodable {
-    let image: URL
+    let image: String
     let title: String
     let city: String
     let state: String
