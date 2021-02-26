@@ -19,6 +19,8 @@
 		E20A0EEF25DC584D00124950 /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EEE25DC584D00124950 /* UIImage+URL.swift */; };
 		E20A0EF425DC5F2700124950 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EF325DC5F2700124950 /* EventsViewController.swift */; };
 		E20A0EFC25DC60CE00124950 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EFB25DC60CE00124950 /* EventController.swift */; };
+		E236EC1F25E948CC00C98195 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */; };
+		E2AC455525E957B80072B60A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC455425E957B80072B60A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		E20A0EEE25DC584D00124950 /* UIImage+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
 		E20A0EF325DC5F2700124950 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		E20A0EFB25DC60CE00124950 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
+		E2AC455425E957B80072B60A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				E20A0E5825DC47E800124950 /* SceneDelegate.swift */,
 				E20A0E5F25DC47EA00124950 /* Assets.xcassets */,
 				E20A0E6425DC47EA00124950 /* Info.plist */,
+				E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */,
+				E2AC455425E957B80072B60A /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 				E20A0EF425DC5F2700124950 /* EventsViewController.swift in Sources */,
 				E20A0E5925DC47E800124950 /* SceneDelegate.swift in Sources */,
 				E20A0EFC25DC60CE00124950 /* EventController.swift in Sources */,
+				E236EC1F25E948CC00C98195 /* ConstantsTemplate.swift in Sources */,
 				E20A0EEA25DC564D00124950 /* Event.swift in Sources */,
+				E2AC455525E957B80072B60A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
