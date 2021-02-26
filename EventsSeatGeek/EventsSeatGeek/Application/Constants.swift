@@ -7,7 +7,7 @@
 import Foundation
 
 struct Constants {
-    static var API_KEY = "testing2"
-    static var CLIENT_ID = "testing2"
+    static var API_KEY = "testing4"
+    static var CLIENT_ID = "testing4"
     static var API_URL = "https://api.seatgeek.com/2/events?client_id=\(CLIENT_ID)&client_secret=\(API_KEY)"
 }
