@@ -12,6 +12,10 @@ class EventController {
     var events: [Event]?
     typealias CompletionHandler = (Error?) -> Void
 
+    init() {
+        fetchEventsFromServer()
+    }
+
     // MARK: - REST methods
     func fetchEventsFromServer(completion: @escaping CompletionHandler = { _ in }) {
         let requestURL = URL(string: Constants.API_URL)!
@@ -29,12 +33,13 @@ class EventController {
             }
 
             do {
-                self.events = try JSONDecoder().decode([Event].self, from: data)
+                let eventsArray = try JSONDecoder().decode(Event.self, from: data)
 
+//                self.events = eventsArray
             } catch {
                 NSLog("Error decoding or saving data from SeatGeek: \(error)")
                 completion(error)
             }
-        }
+        }.resume()
     }
 }
