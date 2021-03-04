@@ -28,8 +28,6 @@ class EventsViewController: UIViewController {
                 self.eventsTableView.reloadData()
             }
         }
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -46,7 +44,7 @@ class EventsViewController: UIViewController {
 }
 
 extension EventsViewController: UITableViewDelegate {
-    
+
 }
 
 extension EventsViewController: UITableViewDataSource {
