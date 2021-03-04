@@ -25,10 +25,10 @@ class EventTableViewCell: UITableViewCell {
     // MARK: - Methods
     func updateViews() {
         guard let event = event else { return }
-        eventImageView.load(url: URL(string: event.image)!)
+        eventImageView.load(url: URL(string: event.performers[0].image)!)
         descriptionLabel.text = event.title
-        locationLabel.text = "\(event.city), \(event.state)"
-        dateLabel.text = "\(event.date)"
+        locationLabel.text = "\(event.venue.city), \(event.venue.state)"
+        dateLabel.text = "\(event.datetime_local)"
     }
 
 
