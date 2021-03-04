@@ -23,6 +23,12 @@ class EventsViewController: UIViewController {
         eventsTableView.delegate = self
         eventsTableView.dataSource = self
 
+        eventController.fetchEventsFromServer { (events, error) in
+            DispatchQueue.main.async {
+                self.eventsTableView.reloadData()
+            }
+        }
+
         // Do any additional setup after loading the view.
     }
     
@@ -40,7 +46,7 @@ class EventsViewController: UIViewController {
 }
 
 extension EventsViewController: UITableViewDelegate {
-
+    
 }
 
 extension EventsViewController: UITableViewDataSource {
@@ -54,6 +60,5 @@ extension EventsViewController: UITableViewDataSource {
 
         return cell
     }
-
 
 }
