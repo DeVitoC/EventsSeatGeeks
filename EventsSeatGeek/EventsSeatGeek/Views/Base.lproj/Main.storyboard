@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Events View Controller-->
+        <!--Find Exciting New Events Near You-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="EventsViewController" customModule="EventsSeatGeek" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3JC-Vs-wos">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="727"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for an event" id="8LV-l4-HaB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -91,21 +91,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Exciting New Events Near You!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRA-yx-OWL">
+                                <rect key="frame" x="10" y="44" width="394" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3JC-Vs-wos" secondAttribute="bottom" id="2Hz-S7-u7E"/>
+                            <constraint firstItem="fRA-yx-OWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DaM-7l-9Cj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3JC-Vs-wos" secondAttribute="bottom" id="EuZ-9V-PPn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3JC-Vs-wos" secondAttribute="trailing" id="Mkn-HX-Mqu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3JC-Vs-wos" secondAttribute="trailing" id="RIB-PT-SFN"/>
-                            <constraint firstItem="3JC-Vs-wos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bgh-6w-egn"/>
+                            <constraint firstItem="3JC-Vs-wos" firstAttribute="top" secondItem="fRA-yx-OWL" secondAttribute="bottom" id="bgh-6w-egn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fRA-yx-OWL" secondAttribute="trailing" constant="10" id="iAB-hs-7bp"/>
                             <constraint firstItem="3JC-Vs-wos" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jmr-dt-18k"/>
                             <constraint firstItem="3JC-Vs-wos" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lek-Ss-zBB"/>
-                            <constraint firstItem="3JC-Vs-wos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="y18-yK-wsM"/>
+                            <constraint firstItem="fRA-yx-OWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="tPq-sF-Q3M"/>
+                            <constraint firstItem="3JC-Vs-wos" firstAttribute="top" secondItem="fRA-yx-OWL" secondAttribute="bottom" id="y18-yK-wsM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3Ai-8g-wEG"/>
+                    <navigationItem key="navigationItem" title="Find Exciting New Events Near You" id="3Ai-8g-wEG"/>
                     <connections>
                         <outlet property="eventsTableView" destination="3JC-Vs-wos" id="KWW-G1-F1d"/>
                         <outlet property="searchBar" destination="8LV-l4-HaB" id="cMi-P8-Kpb"/>
@@ -124,20 +133,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFl-Sa-Igv">
-                                <rect key="frame" x="10" y="140" width="394" height="394"/>
+                                <rect key="frame" x="10" y="88" width="394" height="394"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uFl-Sa-Igv" secondAttribute="height" multiplier="1:1" id="IAL-Ah-MDT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVC-Ix-T2S">
-                                <rect key="frame" x="10" y="544" width="394" height="24"/>
+                                <rect key="frame" x="10" y="492" width="394" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3e-VM-iaJ">
-                                <rect key="frame" x="10" y="578" width="42" height="21"/>
+                                <rect key="frame" x="10" y="526" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdk-6M-5km">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem id="n3y-XI-cAe">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="x95-5y-YTc">
+                                            <connections>
+                                                <action selector="backButtonTapped:" destination="yP4-AU-zOs" id="AtB-5v-RdC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart" catalog="system" id="VRn-bL-0Qm">
+                                            <connections>
+                                                <action selector="favoritesBarButtonTapped:" destination="yP4-AU-zOs" id="bos-Jz-bMo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uus-h2-TJ8">
+                                <rect key="frame" x="10" y="88" width="394" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -145,19 +177,25 @@
                         <viewLayoutGuide key="safeArea" id="YIq-PM-wPW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Xdk-6M-5km" firstAttribute="top" secondItem="YIq-PM-wPW" secondAttribute="top" id="767-qS-sE6"/>
                             <constraint firstItem="m3e-VM-iaJ" firstAttribute="leading" secondItem="YIq-PM-wPW" secondAttribute="leading" constant="10" id="88T-dv-ZLm"/>
+                            <constraint firstItem="Xdk-6M-5km" firstAttribute="trailing" secondItem="YIq-PM-wPW" secondAttribute="trailing" id="I04-4U-RJY"/>
                             <constraint firstItem="tVC-Ix-T2S" firstAttribute="top" secondItem="uFl-Sa-Igv" secondAttribute="bottom" constant="10" id="Jl6-5y-FnY"/>
+                            <constraint firstItem="uFl-Sa-Igv" firstAttribute="top" secondItem="Uus-h2-TJ8" secondAttribute="bottom" id="aIV-TK-QUK"/>
                             <constraint firstItem="uFl-Sa-Igv" firstAttribute="leading" secondItem="YIq-PM-wPW" secondAttribute="leading" constant="10" id="eOm-bg-Y7O"/>
-                            <constraint firstItem="uFl-Sa-Igv" firstAttribute="top" secondItem="YIq-PM-wPW" secondAttribute="top" id="hz1-v5-bRu"/>
                             <constraint firstItem="YIq-PM-wPW" firstAttribute="trailing" secondItem="tVC-Ix-T2S" secondAttribute="trailing" constant="10" id="nbD-05-ozc"/>
                             <constraint firstItem="m3e-VM-iaJ" firstAttribute="top" secondItem="tVC-Ix-T2S" secondAttribute="bottom" constant="10" id="o18-1w-8dJ"/>
+                            <constraint firstItem="Uus-h2-TJ8" firstAttribute="top" secondItem="Xdk-6M-5km" secondAttribute="bottom" id="pcG-zu-HnH"/>
+                            <constraint firstItem="Xdk-6M-5km" firstAttribute="leading" secondItem="YIq-PM-wPW" secondAttribute="leading" id="peO-Kq-Mlf"/>
                             <constraint firstItem="YIq-PM-wPW" firstAttribute="trailing" secondItem="uFl-Sa-Igv" secondAttribute="trailing" constant="10" id="qgu-7T-SuX"/>
                             <constraint firstItem="tVC-Ix-T2S" firstAttribute="leading" secondItem="YIq-PM-wPW" secondAttribute="leading" constant="10" id="qsc-b1-apq"/>
+                            <constraint firstItem="Uus-h2-TJ8" firstAttribute="leading" secondItem="YIq-PM-wPW" secondAttribute="leading" constant="10" id="wrL-ON-N2A"/>
+                            <constraint firstItem="YIq-PM-wPW" firstAttribute="trailing" secondItem="Uus-h2-TJ8" secondAttribute="trailing" constant="10" id="wyF-At-ggt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hRv-g9-Xrg">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="NJU-9i-YSJ">
-                            <imageReference key="image" image="suit.heart" catalog="system" symbolScale="large"/>
+                            <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
                             <connections>
                                 <action selector="favoritesBarButton:" destination="aot-bU-LsF" id="51D-mK-af1"/>
                             </connections>
@@ -166,8 +204,10 @@
                     <connections>
                         <outlet property="dateLabel" destination="tVC-Ix-T2S" id="3MV-ZT-SJJ"/>
                         <outlet property="eventImageView" destination="uFl-Sa-Igv" id="njP-Ta-Bny"/>
-                        <outlet property="favoritesBarButton" destination="NJU-9i-YSJ" id="HI2-Fy-xUW"/>
+                        <outlet property="favoritesBarButton" destination="VRn-bL-0Qm" id="ySU-2R-1m3"/>
                         <outlet property="locationLabel" destination="m3e-VM-iaJ" id="8rU-CY-ExL"/>
+                        <outlet property="navigationBar" destination="n3y-XI-cAe" id="949-RI-LYX"/>
+                        <outlet property="titleLabel" destination="Uus-h2-TJ8" id="G0t-m8-tNi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXu-2Q-8zr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -178,10 +218,10 @@
         <!--Navigation Controller-->
         <scene sceneID="m52-K1-HJY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J4d-fZ-mMj" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="J4d-fZ-mMj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Cv7-iq-qzB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cv7-iq-qzB">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -195,7 +235,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="suit.heart" catalog="system" width="128" height="109"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

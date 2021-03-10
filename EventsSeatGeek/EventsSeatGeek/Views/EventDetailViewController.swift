@@ -17,33 +17,28 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var titleLabel: UILabel!
 
     // MARK: - IBActions
     @IBAction func
     favoritesBarButtonTapped(_ sender: Any) {
     }
 
+    @IBAction func backButtonTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDisplay()
-        // Do any additional setup after loading the view.
     }
 
     func setupDisplay() {
         guard let event = event else { return }
+        titleLabel.text = event.title
         eventImageView.load(url: URL(string: event.performers[0].image)!)
         dateLabel.text = "\(event.datetime_local)"
         locationLabel.text = "\(event.venue.city), \(event.venue.state)"
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
