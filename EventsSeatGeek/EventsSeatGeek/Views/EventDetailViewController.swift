@@ -9,10 +9,31 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
 
+    // MARK: - Properties
+    var event: Event?
+
+    // MARK: - Outlets
+    @IBOutlet weak var favoritesBarButton: UIBarButtonItem!
+    @IBOutlet weak var eventImageView: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+
+    // MARK: - IBActions
+    @IBAction func
+    favoritesBarButtonTapped(_ sender: Any) {
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    func setupDisplay() {
+        guard let event = event else { return }
+        eventImageView.load(url: URL(string: event.performers[0].image)!)
+        dateLabel.text = "\(event.datetime_local)"
+        locationLabel.text = "\(event.venue.city), \(event.venue.state)"
     }
     
 
