@@ -14,7 +14,14 @@ class EventController {
 
     // MARK: - REST methods
     func fetchEventsFromServer(completion: @escaping CompletionHandler = { _,_  in }) {
-        let requestURL = URL(string: Constants.API_URL)!
+        var components = URLComponents(string: Constants.API_URL)!
+        components.queryItems = [
+            URLQueryItem(name: "client_id", value: Constants.CLIENT_ID),
+            URLQueryItem(name: "client_secret", value: Constants.API_KEY),
+            URLQueryItem(name: "per_page", value: "500")
+        ]
+
+        let requestURL = URLRequest(url: components.url!)
 
         URLSession.shared.dataTask(with: requestURL) { (data, _, error) in
             if let error = error {
@@ -43,8 +50,13 @@ class EventController {
     }
 
     func fetchSearchResultsFromServer(searchText: String, completion: @escaping CompletionHandler = { _,_ in }) {
-        var components = URLComponents(string: Constants.API_SEARCH_URL)!
-        components.queryItems = [URLQueryItem(name: "q", value: searchText)]
+        var components = URLComponents(string: Constants.API_URL)!
+        components.queryItems = [
+            URLQueryItem(name: "q", value: searchText),
+            URLQueryItem(name: "client_id", value: Constants.CLIENT_ID),
+            URLQueryItem(name: "client_secret", value: Constants.API_KEY),
+            URLQueryItem(name: "per_page", value: "500")
+        ]
 
         let requestURL = URLRequest(url: components.url!)
 
@@ -64,8 +76,7 @@ class EventController {
             do {
                 let eventsArray = try JSONDecoder().decode(Events.self, from: data)
 
-                let searchedEvents = eventsArray.events
-                completion(searchedEvents, nil)
+                completion(eventsArray.events, nil)
             } catch {
                 NSLog("Error decoding or saving search data: \(error)")
                 completion(nil, error)
