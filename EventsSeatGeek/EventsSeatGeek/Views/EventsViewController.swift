@@ -84,27 +84,26 @@ extension EventsViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
+            isSearching = false
             currentListOfEvents = eventController.events
             eventsTableView.reloadData()
             return
         }
-        guard let events = eventController.events else { return }
-        var newListOfEvents: [Event] = []
 
-        for event in events {
-            if event.searchText.contains(searchText.lowercased()) {
-                newListOfEvents.append(event)
+        eventController.fetchSearchResultsFromServer(searchText: searchText) { (events, error) in
+            DispatchQueue.main.async {
+                guard let events = events else { return }
+
+                self.currentListOfEvents = events
+
+                if self.currentListOfEvents?.count == 0 {
+                    self.isSearching = false
+                } else {
+                    self.isSearching = true
+                }
+
+                self.eventsTableView.reloadData()
             }
         }
-
-        if newListOfEvents.count == 0 {
-            isSearching = false
-        } else {
-            isSearching = true
-        }
-
-        currentListOfEvents = newListOfEvents
-
-        eventsTableView.reloadData()
     }
 }
