@@ -12,6 +12,10 @@ struct Event: Decodable {
     let title: String
     let venue: Venue
     let datetime_local: String
+    let type: String
+    var searchText: String {
+        "\(title) \(venue.city) \(venue.state) \(datetime_local) \(type)".lowercased()
+    }
 }
 
 struct Venue: Decodable {
