@@ -25,7 +25,7 @@ class EventDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupDisplay()
         // Do any additional setup after loading the view.
     }
 
@@ -35,7 +35,6 @@ class EventDetailViewController: UIViewController {
         dateLabel.text = "\(event.datetime_local)"
         locationLabel.text = "\(event.venue.city), \(event.venue.state)"
     }
-    
 
     /*
     // MARK: - Navigation
