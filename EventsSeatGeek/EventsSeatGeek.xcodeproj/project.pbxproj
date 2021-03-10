@@ -20,6 +20,8 @@
 		E20A0EF425DC5F2700124950 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EF325DC5F2700124950 /* EventsViewController.swift */; };
 		E20A0EFC25DC60CE00124950 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A0EFB25DC60CE00124950 /* EventController.swift */; };
 		E236EC1F25E948CC00C98195 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */; };
+		E27DB51025F171870043AB33 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27DB50F25F171870043AB33 /* Events.swift */; };
+		E27DB51525F17F680043AB33 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27DB51425F17F680043AB33 /* EventDetailViewController.swift */; };
 		E2AC455525E957B80072B60A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC455425E957B80072B60A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		E20A0EF325DC5F2700124950 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		E20A0EFB25DC60CE00124950 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
+		E27DB50F25F171870043AB33 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		E27DB51425F17F680043AB33 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		E2AC455425E957B80072B60A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +169,7 @@
 				E20A0E6125DC47EA00124950 /* LaunchScreen.storyboard */,
 				E20A0EE025DC54EF00124950 /* EventTableViewCell.swift */,
 				E20A0EF325DC5F2700124950 /* EventsViewController.swift */,
+				E27DB51425F17F680043AB33 /* EventDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			children = (
 				E20A0EE925DC564D00124950 /* Event.swift */,
 				E20A0EEE25DC584D00124950 /* UIImage+URL.swift */,
+				E27DB50F25F171870043AB33 /* Events.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,10 +318,12 @@
 				E20A0E5725DC47E800124950 /* AppDelegate.swift in Sources */,
 				E20A0EEF25DC584D00124950 /* UIImage+URL.swift in Sources */,
 				E20A0EF425DC5F2700124950 /* EventsViewController.swift in Sources */,
+				E27DB51025F171870043AB33 /* Events.swift in Sources */,
 				E20A0E5925DC47E800124950 /* SceneDelegate.swift in Sources */,
 				E20A0EFC25DC60CE00124950 /* EventController.swift in Sources */,
 				E236EC1F25E948CC00C98195 /* ConstantsTemplate.swift in Sources */,
 				E20A0EEA25DC564D00124950 /* Event.swift in Sources */,
+				E27DB51525F17F680043AB33 /* EventDetailViewController.swift in Sources */,
 				E2AC455525E957B80072B60A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

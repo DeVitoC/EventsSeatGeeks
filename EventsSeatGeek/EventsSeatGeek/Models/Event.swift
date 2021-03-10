@@ -8,9 +8,17 @@
 import UIKit
 
 struct Event: Decodable {
-    let image: URL
+    let performers: [Performer]
     let title: String
-    let city: String
-    let state: String
-    let date: Date
+    let venue: Venue
+    let datetime_local: String
+}
+
+struct Venue: Decodable {
+    var city: String
+    var state: String
+}
+
+struct Performer: Decodable {
+    var image: String
 }
