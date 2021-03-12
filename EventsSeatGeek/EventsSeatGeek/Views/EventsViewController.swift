@@ -12,6 +12,7 @@ class EventsViewController: UIViewController {
     // MARK: - Properties
     var eventController = EventController()
     var currentListOfEvents: [Event]?
+    var favoriteEvents: [Event]?
     var isSearching: Bool = false
 
     // MARK: - Outlets

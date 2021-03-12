@@ -10,7 +10,7 @@ import CoreData
 
 extension Favorite {
     var event: Event? {
-        guard let image = image, let city = city, let state = state, let title = title, let date = date, let type = type else { return nil}
+        guard let image = image, let city = city, let state = state, let title = title, let date = date, let type = type else { return nil }
         let performer = Performer(image: image)
         let venue = Venue(city: city, state: state)
         return Event(performers: [performer], title: title, venue: venue, datetime_local: date, type: type)
