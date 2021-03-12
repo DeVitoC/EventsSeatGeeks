@@ -22,6 +22,7 @@
 		E23061E525FBDA23001B5ED8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E23061E325FBDA23001B5ED8 /* Model.xcdatamodeld */; };
 		E23061EA25FBDAC7001B5ED8 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23061E925FBDAC7001B5ED8 /* FavoriteController.swift */; };
 		E23061EF25FBDC3A001B5ED8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23061EE25FBDC3A001B5ED8 /* CoreDataStack.swift */; };
+		E23061F425FBDE95001B5ED8 /* Favorite+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23061F325FBDE95001B5ED8 /* Favorite+Convenience.swift */; };
 		E236EC1F25E948CC00C98195 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */; };
 		E27DB51025F171870043AB33 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27DB50F25F171870043AB33 /* Events.swift */; };
 		E27DB51525F17F680043AB33 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27DB51425F17F680043AB33 /* EventDetailViewController.swift */; };
@@ -68,6 +69,7 @@
 		E23061E425FBDA23001B5ED8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E23061E925FBDAC7001B5ED8 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
 		E23061EE25FBDC3A001B5ED8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E23061F325FBDE95001B5ED8 /* Favorite+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+Convenience.swift"; sourceTree = "<group>"; };
 		E236EC1E25E948CC00C98195 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		E27DB50F25F171870043AB33 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		E27DB51425F17F680043AB33 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				E27F51D625F96BEE007610F8 /* LossyArray.swift */,
 				E23061E325FBDA23001B5ED8 /* Model.xcdatamodeld */,
 				E23061EE25FBDC3A001B5ED8 /* CoreDataStack.swift */,
+				E23061F325FBDE95001B5ED8 /* Favorite+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				E20A0EEA25DC564D00124950 /* Event.swift in Sources */,
 				E27DB51525F17F680043AB33 /* EventDetailViewController.swift in Sources */,
 				E23061E525FBDA23001B5ED8 /* Model.xcdatamodeld in Sources */,
+				E23061F425FBDE95001B5ED8 /* Favorite+Convenience.swift in Sources */,
 				E2AC455525E957B80072B60A /* Constants.swift in Sources */,
 				E23061EA25FBDAC7001B5ED8 /* FavoriteController.swift in Sources */,
 			);
