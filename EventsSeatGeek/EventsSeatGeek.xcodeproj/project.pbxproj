@@ -152,6 +152,7 @@
 		E20A0E8925DC47FE00124950 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				E20A0EEE25DC584D00124950 /* UIImage+URL.swift */,
 				E20A0E5625DC47E800124950 /* AppDelegate.swift */,
 				E20A0E5825DC47E800124950 /* SceneDelegate.swift */,
 				E20A0E5F25DC47EA00124950 /* Assets.xcassets */,
@@ -187,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				E20A0EE925DC564D00124950 /* Event.swift */,
-				E20A0EEE25DC584D00124950 /* UIImage+URL.swift */,
 				E27DB50F25F171870043AB33 /* Events.swift */,
 				E27F51D625F96BEE007610F8 /* LossyArray.swift */,
 				E23061E325FBDA23001B5ED8 /* Model.xcdatamodeld */,
