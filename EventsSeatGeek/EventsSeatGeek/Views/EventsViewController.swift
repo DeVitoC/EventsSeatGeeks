@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class EventsViewController: UIViewController {
 
@@ -27,9 +28,18 @@ class EventsViewController: UIViewController {
         eventsTableView.dataSource = self
         searchBar.delegate = self
 
+        favoriteEvents = eventController.fetchFavoritesFromCoreData()
+        var favoriteTitles: [String] = []
+        
+        }
+
         eventController.fetchEventsFromServer { (events, error) in
             DispatchQueue.main.async {
-                self.currentListOfEvents = events
+                if favoriteEvents?.count == 0 {
+                    self.currentListOfEvents = events
+                } else {
+
+                }
                 self.eventsTableView.reloadData()
             }
         }
